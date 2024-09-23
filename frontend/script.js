@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   getVisitCount();
 });
 
-const functionApi = "";
+const functionApi = "http://localhost:7071/api/GetPortfolioCounter";
 
 const getVisitCount = () => {
   let count = 30;
