@@ -9,11 +9,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   getVisitCount();
 });
 
-const functionApi = "http://localhost:7071/api/GetPortfolioCounter";
+const functionApiUrl = "https://getportfoliocounter.azurewebsites.net";
+const localfunctionApi = "http://localhost:7071/api/GetPortfolioCounter";
 
 const getVisitCount = () => {
   let count = 30;
-  fetch(functionApi)
+  fetch(functionApiUrl)
     .then((response) => {
       return response.json();
     })
