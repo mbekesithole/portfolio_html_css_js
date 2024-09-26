@@ -1,8 +1,13 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  
+  if (menu && icon) {
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  } else {
+    console.error("Menu or icon element not found.");
+  }
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -13,18 +18,19 @@ const functionApiUrl = "https://getportfoliocounter.azurewebsites.net";
 const localfunctionApi = "http://localhost:7071/api/GetPortfolioCounter";
 
 const getVisitCount = () => {
-  let count = 30;
   fetch(functionApiUrl)
     .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
       return response.json();
     })
-    .then((response) => {
+    .then((data) => {
       console.log("Website called function API!");
-      count = response.count;
+      const count = data.count;
       document.getElementById("counter").innerText = count;
     })
     .catch(function (error) {
-      console.log(error);
+      console.error("Error:", error);
     });
-  return count;
 };
