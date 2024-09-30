@@ -1,7 +1,7 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  
+
   if (menu && icon) {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
@@ -14,7 +14,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   getVisitCount();
 });
 
-const functionApiUrl = "https://getportfoliocounter.azurewebsites.net";
+const functionApiUrl =
+  "https://getportfoliocounter.azurewebsites.net/api/GetPortfolioCounter?code=KYToOWBeMBlSHxOqXCSxDPx2khb7yFKN-4KZ8XWABa09AzFuIa9TEQ%3D%3D";
 const localfunctionApi = "http://localhost:7071/api/GetPortfolioCounter";
 
 const getVisitCount = () => {
