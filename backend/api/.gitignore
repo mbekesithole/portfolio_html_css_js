@@ -4,10 +4,10 @@
 # Azure Functions localsettings file
 local.settings.json
 
+backend/tests
+
 # Azure tests localsettings file
 backend/tests/bin/*
-
-backend/tests
 
 # User-specific files
 *.suo
