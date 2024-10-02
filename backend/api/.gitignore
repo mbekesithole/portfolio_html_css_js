@@ -4,6 +4,9 @@
 # Azure Functions localsettings file
 local.settings.json
 
+# Azure tests localsettings file
+backend/tests/bin/Debug/net8.0/local.settings.json
+
 # User-specific files
 *.suo
 *.user
