@@ -5,7 +5,7 @@
 local.settings.json
 
 # Azure tests localsettings file
-backend/tests/bin/Debug/net8.0/local.settings.json:6
+backend/tests/bin/*
 
 backend/tests
 
