@@ -2,7 +2,7 @@
 ![serverless_portfolio_app](https://github.com/user-attachments/assets/1d9f4cb9-b3e0-4a69-9369-da05c9e91138)
 
 My portfolio project, following the Cloud Resume Challenge. 
-This is my repo for the CRC (by Forrest Brazeal) built using Azure services. It showcases cloud security development skills and best practices in serverless computing and content delivery. Completed portfolio at https://mbekezelisithole.site
+This is my repo for the CRC (by Forrest Brazeal) built using Azure services. It showcases cloud security development skills and best practices in serverless computing and content delivery. Completed portfolio at https://www.mbekezelisithole.site
 
 ## Architecture
 
